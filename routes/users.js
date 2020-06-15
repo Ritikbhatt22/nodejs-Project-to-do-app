@@ -1,11 +1,11 @@
 
-const express = require("express");
+// const express = require("express");
 
-const router= express.Router();
+// const router= express.Router();
 
-let user = require('../controllers/users')
+// let user = require('../controllers/users')
 
-router.get('/profile',user.adduser);
+// router.post('/addTask',user.addtask);
 
-module.exports= router;
+// module.exports= router;
 

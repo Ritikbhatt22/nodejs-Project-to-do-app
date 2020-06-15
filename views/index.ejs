@@ -1,12 +1,85 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        
+  <head>
+    <link rel="stylesheet" href="/css/assets.css" />
+  </head>
+  <body>
+    <div id="outside">
+      <div id="header">
         <title><%=title%></title>
-        <link rel="stylesheet" href="/css/assets.css" />
-    </head>
-    <body>
-     <h1>here comes the</h1>
-     
-    </body>
-    </html>
+        <h1>TODO app</h1>
+      </div>
+      <div id="main">
+        <form action="/addTask" method="POST">
+          <div id="div1_form">
+            <span>Description</span>
+            <input
+              type="text"
+              name="description"
+              id="input1"
+              placeholder="what do you need to do ?"
+            />
+          </div>
+          <div id="common_div">
+            <div id="div2_form">
+              <span>Category</span>
+              <select
+                class="dropbtn"
+                name="category"
+                placeholder="choose a category"
+              >
+                <option value="Personal">Personal</option>
+                <option value="Work">Work</option>
+                <option value="School">School</option>
+                <option value="audi">Audi</option>
+              </select>
+            </div>
+            <div id="div3_form">
+              <span>Due Date</span>
+              <input
+                type="date"
+                id="start"
+                name="dueDate"
+                value="2018-07-22"
+                min="2018-01-01"
+                max="2018-12-31"
+              />
+            </div>
+          </div>
+          <div id="form_button">
+            <button class="addTasks">
+              ADD ME
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <div id="footer">
+        <div>
+          <form action="/deleteTask" method="POST">
+            <div id="delete_btn">
+            <button style="background-color:blue" class="btn-default addTasks">Delete</button>
+            </div>
+            <ul>
+              <%for(let i of contact ){%>
+              <l1>
+                <div class="common_li">
+                  <div class="checkbox_form">
+                    <% let checked =i.id %>
+                    <input type="checkbox" name="check" value="<%=i.id%>" />
+                  </div>
+                  <div class="first_li"><%=i.description%></div>
+                  <div class="second_li">
+                    <%=i.category%>
+                  </div>
+                </div>
+                <div class="third_li"><%=i.dueDate%></div>
+              </l1>
+              <%}%>
+            </ul>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

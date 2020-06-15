@@ -1,5 +1,176 @@
-body{
-   
-    margin:0;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: grey;
+  color: grey;
 }
 
+#outside {
+  width: 60vw;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: white;
+  border: 2px solid black;
+}
+
+/* header */
+#header {
+  border-bottom: 2px solid gray;
+}
+h1 {
+  text-align: center;
+}
+
+/*  middle div */
+#common_div {
+  display: flex;
+  border-bottom: 2px solid grey;
+}
+
+#div1_form {
+  border-bottom: 2px solid gray;
+}
+
+#div1_form span {
+  font-size: 20px;
+  display: block;
+  margin-top: 11px;
+  height: 26px;
+  margin-left: 27px;
+}
+
+#input1 {
+  font-size: 18px;
+  margin-left: 27px;
+  border: none;
+  font-family: sans-serif;
+  color: grey;
+  height: 30px;
+}
+::placeholder {
+  color: grey;
+  opacity: 0.4; /* Firefox */
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+
+/* div 2 forms */
+
+#div2_form span {
+  font-size: 20px;
+  display: block;
+  margin-top: 11px;
+  height: 26px;
+  margin-left: 27px;
+}
+
+#div2_form {
+  width: 400px;
+  height: 100px;
+  padding: 5px;
+}
+
+/* div2 dropdown */
+.dropbtn {
+    color: grey;
+    padding: 16px;
+    margin-left: 9px;
+    font-size: 16px;
+    width: 400px;
+    border: none;
+    cursor: pointer;
+}
+/* div 3 forms */
+#div3_form {
+  width: 400px;
+  height: 100px;
+  padding: 5px;
+}
+
+#div3_form span {
+  font-size: 20px;
+  display: block;
+  margin-top: 11px;
+  height: 26px;
+  margin-left: 27px;
+}
+
+#start {
+  color: grey;
+  border: none;
+  margin-left: 24px;
+  font-size: 16px;
+  margin-top: 13px;
+}
+
+
+/*  adding buttons to project add and delete */
+
+
+.addTasks {
+    background-color: darkgray;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 16px;
+    margin: 7px 23px;
+    width: 139px;
+    height: 56px;
+}
+/* div containing form button */
+#form_button{
+    text-align: center; 
+    border-bottom:2px solid grey
+}
+
+/*  adding footer parts */
+.first_li {
+    font-size: 20px;
+    position: absolute;
+    left: 55px;
+    top: 9px;
+}
+
+.common_li {
+    display: flex;
+    margin-right: 40px;
+    position: relative;
+    justify-content: space-between;
+    border-bottom: 2px solid grey;
+}
+/* check box element */
+
+.checkbox_form{
+    font-size: 20px;
+    margin-top: 10px;  
+}
+
+/* second li element */
+
+.second_li {
+    width: 106px;
+    height: 44px;
+    background-color: grey;
+    color: white;
+    padding-top: 27px;
+}
+
+.third_li {
+    width: 100px;
+    height: 30px;
+    position: relative;
+    bottom: 32px;
+    left: 61px;
+}
+
+
+
+#delete_btn{
+    
+}
